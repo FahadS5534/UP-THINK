@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#1f201e", "error-container": "#93000a", "on-secondary-container": "#deb080", "on-primary": "#263500", "inverse-surface": "#e4e2de", "tertiary-container": "#ccedac", "on-secondary-fixed": "#2c1700", "background": "#131412", "error": "#ffb4ab", "surface-container-high": "#292a28", "on-surface": "#e4e2de", "surface": "#131412", "on-surface-variant": "#c4c9b2", "secondary-fixed": "#ffdcbb", "primary": "#ffffff", "surface-container-low": "#1b1c1a", "on-secondary-fixed-variant": "#60401a", "outline": "#8e937e", "on-primary-fixed-variant": "#394d00", "surface-bright": "#393937", "inverse-primary": "#4d6700", "on-error-container": "#ffdad6", "surface-variant": "#343533", "secondary-container": "#63421c", "surface-container-highest": "#343533", "on-primary-container": "#516d00", "primary-fixed": "#c8f169", "primary-container": "#c8f169", "tertiary": "#ffffff", "secondary-fixed-dim": "#edbe8d", "on-tertiary-fixed": "#0c2000", "surface-tint": "#add450", "on-tertiary-fixed-variant": "#344e1d", "on-tertiary": "#1e3708", "primary-fixed-dim": "#add450", "surface-container-lowest": "#0d0e0d", "on-background": "#e4e2de", "on-secondary": "#462a06", "on-tertiary-container": "#506c38", "on-error": "#690005", "surface-dim": "#131412", "on-primary-fixed": "#151f00", "tertiary-fixed-dim": "#b0d092", "secondary": "#edbe8d", "outline-variant": "#444938", "inverse-on-surface": "#30312e", "tertiary-fixed": "#ccedac" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "margin": "2.5rem", "gutter": "1.25rem", "space-sm": "0.5rem" }, "fontFamily": { "label-sm": ["Space Grotesk"], "label-md": ["Space Grotesk"], "body-md": ["DM Sans"], "display-lg-mobile": ["Space Grotesk"], "metric-numeral": ["Space Grotesk"], "body-lg": ["DM Sans"], "body-sm": ["DM Sans"], "headline-md": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "display-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"] }, "fontSize": { "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600"}], "label-md": ["13px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600"}], "metric-numeral": ["44px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "500"}], "headline-sm": ["20px", {"lineHeight": "26px", "fontWeight": "500"}], "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600"}], "headline-lg-mobile": ["26px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500"}] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131412;color:#e4e2de;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.40)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-gutter-mobile"><div class="flex items-center gap-space-sm min-w-0"><img alt="Personalize or Perish Node Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VNqPzlRNfooRuDKfhqLjbhv2sEkce2Zd9pFeJgST8H94MzoEqn7N1nK7YYZDF2GkUpH2-qNaotBvofZul5j69afK6NDa8yvjAVTgKXKix0YgHFHXWnVSotqCxLwq3-nRznWZYToYFNZjKJfAqYvc5P5F5S1PL0nx8Nk547CS-n2p56kCtKvwgFzEHWHwtU9QgT0zQEgBOis0g0fCQodXcTu8fvYqZdOrAlgh_LDaZ5qkoWVLv0FEyzODY"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-widest truncate">Personalize or Perish</span><h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight truncate leading-none mt-0.5">Tutor</h1></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors rounded-xl"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-fixed shadow-[0_0_6px_rgba(200,241,105,0.7)]"></span></button><button aria-label="Student Account Profile" class="w-11 h-11 flex items-center justify-center rounded-xl p-0.5"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAStaYjj_NdOgC4-awXMBlg1cXnKS0JeYs8M-Dv5LiEC42-R_AH8-oYIqj4uITieb4AVpW4QFyt8dFMDqAlI0SkK-bBjR7FAx5uUDtqI5e2al9x9FpFQ0SocQgQ_4OpZnfqs2a44Kc6DezDWOi4cJgz80c1HBr0fGhJ96sNaT_n5alj7Iiws_cXluIrZtT9sL17NbkSNdPSeBXcw8ikz3xlpwuekhiqWY3YGwHiF89b5JUinh5UYnvVQA"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface px-margin-mobile"><div class="flex flex-col w-full gap-space-md">
+<!-- Topic & Context Metadata Card -->
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-lg bg-surface-container-high text-primary-fixed">
+<span class="material-symbols-outlined text-[16px]">school</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider truncate">Study Companion</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface-variant shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Synced ChromaDB</span>
+</div>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Linear Algebra: Spectral Theorem</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">MATH-204 Lecture Notes &amp; Gilbert Strang Ch. 6</p>
+</div>
+<!-- Active Citation Anchor -->
+<div class="flex items-center gap-space-xs pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary-fixed">menu_book</span>
+<span class="truncate">Referencing 3 course embeddings + 1 textbook node</span>
+</div>
+</section>
+<!-- Interactive Graph Topology Widget (Inspired by Node Knowledge Graph) -->
+<section class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Concept Node Hierarchy</span>
+<button class="font-label-sm text-label-sm text-primary-fixed hover:underline flex items-center gap-0.5" id="toggle-nodes-btn">
+<span class="material-symbols-outlined text-[14px]">insights</span>
+<span>Inspect Matrix</span>
+</button>
+</div>
+<!-- Node Lattice Graphic -->
+<div class="relative w-full h-28 bg-surface-container-lowest rounded-lg flex items-center justify-center overflow-hidden">
+<svg class="absolute inset-0 w-full h-full" fill="none" viewbox="0 0 320 112" xmlns="http://www.w3.org/2000/svg">
+<!-- Connecting Edges -->
+<line stroke="#444938" stroke-width="2" x1="160" x2="225" y1="20" y2="56"></line>
+<line stroke="#add450" stroke-width="2" x1="225" x2="160" y1="56" y2="92"></line>
+<line stroke="#444938" stroke-width="2" x1="160" x2="95" y1="92" y2="56"></line>
+<line stroke="#add450" stroke-width="2.5" x1="95" x2="160" y1="56" y2="20"></line>
+<line stroke="#c8f169" stroke-dasharray="4 4" stroke-width="2" x1="95" x2="225" y1="56" y2="56"></line>
+<!-- Nodes -->
+<circle cx="160" cy="20" fill="#c8f169" r="10"></circle>
+<circle cx="225" cy="56" fill="#1f201e" r="11" stroke="#e4e2de" stroke-width="2"></circle>
+<circle cx="160" cy="92" fill="#edbe8d" r="11"></circle>
+<circle cx="160" cy="92" fill="#131412" r="5"></circle>
+<circle cx="95" cy="56" fill="#c8f169" r="12"></circle>
+<circle cx="95" cy="56" fill="#131412" r="6"></circle>
+</svg>
+<div class="absolute bottom-1.5 left-2 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm bg-surface-container-high/80 px-2 py-0.5 rounded">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+<span>Active Focus: Symmetric Decomp.</span>
+</div>
+</div>
+</section>
+<!-- Conversation Feed -->
+<div class="flex flex-col gap-space-md" id="chat-stream">
+<!-- Student Prompt -->
+<div class="flex flex-col items-end gap-1.5 pl-6">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm">You (Student)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">10:42 AM</span>
+</div>
+<div class="bg-surface-container-high text-on-surface rounded-xl rounded-tr-none p-space-md shadow-sm">
+<p class="font-body-md text-body-md leading-relaxed">
+          Why does an <span class="font-metric-numeral text-[13px] px-1 py-0.5 rounded bg-surface-container-lowest text-primary-fixed">n × n</span> real symmetric matrix always have <span class="font-metric-numeral text-[13px] px-1 py-0.5 rounded bg-surface-container-lowest text-primary-fixed">n</span> real eigenvalues and an orthonormal basis of eigenvectors?
+        </p>
+</div>
+</div>
+<!-- Companion Response -->
+<div class="flex flex-col items-start gap-1.5 pr-4">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="w-4 h-4 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary text-[10px] font-bold">λ</span>
+<span class="font-label-sm text-label-sm text-primary-fixed">Companion AI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">10:43 AM</span>
+</div>
+<div class="bg-surface-container text-on-surface rounded-xl rounded-tl-none p-space-md shadow-md flex flex-col gap-space-sm">
+<p class="font-body-md text-body-md leading-relaxed">
+          The foundation of the <strong>Spectral Theorem</strong> for real symmetric matrices rests on two key mathematical guarantees:
+        </p>
+<!-- Formal Formula Callout Block -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Formal Identity</span>
+<span class="font-label-sm text-label-sm">A = Aᵀ ∈ ℝⁿˣⁿ</span>
+</div>
+<div class="font-metric-numeral text-[15px] text-on-surface tracking-normal leading-loose overflow-x-auto py-1">
+<div class="text-primary-fixed">Av = λv &amp;implies v*Av = v*(λv) = λ||v||²</div>
+<div class="text-on-surface-variant text-[13px] mt-1">Taking conjugate transpose: (Av)*v = v*A*v = v*Aᵀv = λ̄||v||²</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Since <span class="text-on-surface">λ||v||² = λ̄||v||²</span> and <span class="text-on-surface">||v|| &gt; 0</span>, we conclude <span class="text-primary-fixed font-semibold">λ = λ̄</span>. Hence, all eigenvalues are strictly real.
+          </p>
+</div>
+<!-- Academic Takeaway Checklist -->
+<div class="flex flex-col gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Key Takeaways</span>
+<div class="flex items-start gap-2 bg-surface-container-low p-space-sm rounded-lg">
+<span class="material-symbols-outlined text-primary-fixed text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Orthogonality of Distinct Eigenspaces:</strong> If <span class="text-primary-fixed">λ₁ ≠ λ₂</span>, then <span class="text-primary-fixed">v₁ᵀv₂ = 0</span> automatically.</span>
+</div>
+<div class="flex items-start gap-2 bg-surface-container-low p-space-sm rounded-lg">
+<span class="material-symbols-outlined text-primary-fixed text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Complete Basis Guaranteed:</strong> Repeated eigenvalues still possess geometric multiplicity equal to algebraic multiplicity.</span>
+</div>
+</div>
+<!-- Interactive Vector Citation Card -->
+<div class="bg-surface-container-high rounded-xl p-space-sm flex items-center justify-between gap-space-sm cursor-pointer hover:bg-surface-variant transition-colors" id="citation-card">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">MATH 204: Theorem 6.4 (Spectral)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Lecture 14 · Slide 18 · Vector distance: 0.082</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] shrink-0">open_in_new</span>
+</div>
+</div>
+</div>
+<!-- Active Inference / Synthesis Indicator -->
+<div class="flex items-center gap-space-xs p-space-sm bg-surface-container-low rounded-lg text-on-surface-variant" id="model-status">
+<span class="material-symbols-outlined text-primary-fixed text-[18px] animate-spin">sync</span>
+<span class="font-label-sm text-label-sm truncate">Synthesizing answer using Gemini 1.5 Pro &amp; course vectors...</span>
+</div>
+</div>
+<!-- Dynamic Follow-up Action Pills -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Suggested Exploration</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap to ask</span>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<button class="followup-btn shrink-0 px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1.5 active:scale-95">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">lightbulb</span>
+<span>Explain this simply</span>
+</button>
+<button class="followup-btn shrink-0 px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1.5 active:scale-95">
+<span class="material-symbols-outlined text-[16px] text-secondary">quiz</span>
+<span>Give me a practice question</span>
+</button>
+<button class="followup-btn shrink-0 px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1.5 active:scale-95">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">view_in_ar</span>
+<span>Show geometric intuition</span>
+</button>
+</div>
+</section>
+<!-- Academic Tutor Input Dock -->
+<div class="bg-surface-container-lowest/95 backdrop-blur-md rounded-2xl p-space-sm shadow-xl flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<button aria-label="Attach notes or screenshot" class="w-9 h-9 rounded-xl flex items-center justify-center bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">attach_file</span>
+</button>
+<button aria-label="Use voice dictation" class="w-9 h-9 rounded-xl flex items-center justify-center bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<div class="flex-1 min-w-0 bg-surface-container rounded-xl px-space-md py-2 flex items-center">
+<input class="w-full bg-transparent text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none" id="companion-input" placeholder="Ask your companion or paste equation..." type="text"/>
+</div>
+<button aria-label="Send message" class="w-10 h-10 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold shadow-md hover:brightness-105 active:scale-95 transition-all shrink-0" id="send-btn">
+<span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+</button>
+</div>
+<div class="flex items-center justify-between px-space-xs pt-0.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary-fixed">token</span>
+        Context: 4,120 / 32k tokens
+      </span>
+<span class="text-[10px] uppercase tracking-widest text-outline">LaTeX &amp; Markdown Enabled</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const input = document.getElementById('companion-input');
+    const sendBtn = document.getElementById('send-btn');
+    const chatStream = document.getElementById('chat-stream');
+    const pills = document.querySelectorAll('.followup-btn');
+    const citation = document.getElementById('citation-card');
+
+    function sendPrompt(text) {
+      if (!text || !text.trim()) return;
+
+      const userMsg = document.createElement('div');
+      userMsg.className = 'flex flex-col items-end gap-1.5 pl-6 animate-fadeIn';
+      userMsg.innerHTML = `
+        <div class="flex items-center gap-1 text-on-surface-variant">
+          <span class="font-label-sm text-label-sm">You (Student)</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant/70">Just now</span>
+        </div>
+        <div class="bg-surface-container-high text-on-surface rounded-xl rounded-tr-none p-space-md shadow-sm">
+          <p class="font-body-md text-body-md leading-relaxed">${text}</p>
+        </div>
+      `;
+      chatStream.appendChild(userMsg);
+
+      const status = document.getElementById('model-status');
+      if (status) {
+        status.innerHTML = `
+          <span class="material-symbols-outlined text-primary-fixed text-[18px] animate-spin">neurology</span>
+          <span class="font-label-sm text-label-sm truncate">Retrieving Gilbert Strang Ch. 6 vector embeddings...</span>
+        `;
+      }
+
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+
+    if (sendBtn && input) {
+      sendBtn.addEventListener('click', () => {
+        sendPrompt(input.value);
+        input.value = '';
+      });
+
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          sendPrompt(input.value);
+          input.value = '';
+        }
+      });
+    }
+
+    pills.forEach((pill) => {
+      pill.addEventListener('click', () => {
+        const text = pill.querySelector('span:last-child')?.textContent || '';
+        sendPrompt(text);
+      });
+    });
+
+    if (citation) {
+      citation.addEventListener('click', () => {
+        citation.classList.toggle('bg-surface-container-highest');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.60)]" data-active-classes="text-primary-fixed fill-current font-semibold"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex-1 flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant transition-colors group" data-path="home" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[24px] mb-0.5 transition-transform group-hover:scale-105">analytics</span><span class="font-label-sm text-label-sm tracking-normal">Home</span></div></a><a class="flex-1 flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant transition-colors group" data-path="learn" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[24px] mb-0.5 transition-transform group-hover:scale-105">auto_stories</span><span class="font-label-sm text-label-sm tracking-normal">Learn</span></div></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center h-full min-h-[44px] transition-colors group text-primary-fixed fill-current font-semibold" data-path="tutor" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[24px] mb-0.5 transition-transform group-hover:scale-105">neurology</span><span class="font-label-sm text-label-sm tracking-normal">Tutor</span></div></a><a class="flex-1 flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant transition-colors group" data-path="plan" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[24px] mb-0.5 transition-transform group-hover:scale-105">tune</span><span class="font-label-sm text-label-sm tracking-normal">Plan</span></div></a><a class="flex-1 flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant transition-colors group" data-path="profile" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[24px] mb-0.5 transition-transform group-hover:scale-105">account_circle</span><span class="font-label-sm text-label-sm tracking-normal">Profile</span></div></a></div></nav></body></html>

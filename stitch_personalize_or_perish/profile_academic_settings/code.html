@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#1f201e", "error-container": "#93000a", "on-secondary-container": "#deb080", "on-primary": "#263500", "inverse-surface": "#e4e2de", "tertiary-container": "#ccedac", "on-secondary-fixed": "#2c1700", "background": "#131412", "error": "#ffb4ab", "surface-container-high": "#292a28", "on-surface": "#e4e2de", "surface": "#131412", "on-surface-variant": "#c4c9b2", "secondary-fixed": "#ffdcbb", "primary": "#ffffff", "surface-container-low": "#1b1c1a", "on-secondary-fixed-variant": "#60401a", "outline": "#8e937e", "on-primary-fixed-variant": "#394d00", "surface-bright": "#393937", "inverse-primary": "#4d6700", "on-error-container": "#ffdad6", "surface-variant": "#343533", "secondary-container": "#63421c", "surface-container-highest": "#343533", "on-primary-container": "#516d00", "primary-fixed": "#c8f169", "primary-container": "#c8f169", "tertiary": "#ffffff", "secondary-fixed-dim": "#edbe8d", "on-tertiary-fixed": "#0c2000", "surface-tint": "#add450", "on-tertiary-fixed-variant": "#344e1d", "on-tertiary": "#1e3708", "primary-fixed-dim": "#add450", "surface-container-lowest": "#0d0e0d", "on-background": "#e4e2de", "on-secondary": "#462a06", "on-tertiary-container": "#506c38", "on-error": "#690005", "surface-dim": "#131412", "on-primary-fixed": "#151f00", "tertiary-fixed-dim": "#b0d092", "secondary": "#edbe8d", "outline-variant": "#444938", "inverse-on-surface": "#30312e", "tertiary-fixed": "#ccedac" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "margin": "2.5rem", "gutter": "1.25rem", "space-sm": "0.5rem" }, "fontFamily": { "label-sm": ["Space Grotesk"], "label-md": ["Space Grotesk"], "body-md": ["DM Sans"], "display-lg-mobile": ["Space Grotesk"], "metric-numeral": ["Space Grotesk"], "body-lg": ["DM Sans"], "body-sm": ["DM Sans"], "headline-md": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "display-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"] }, "fontSize": { "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600"}], "label-md": ["13px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600"}], "metric-numeral": ["44px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "500"}], "headline-sm": ["20px", {"lineHeight": "26px", "fontWeight": "500"}], "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600"}], "headline-lg-mobile": ["26px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500"}] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131412;color:#e4e2de;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.40)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-gutter-mobile"><div class="flex items-center gap-space-sm min-w-0"><img alt="Personalize or Perish Node Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VNqPzlRNfooRuDKfhqLjbhv2sEkce2Zd9pFeJgST8H94MzoEqn7N1nK7YYZDF2GkUpH2-qNaotBvofZul5j69afK6NDa8yvjAVTgKXKix0YgHFHXWnVSotqCxLwq3-nRznWZYToYFNZjKJfAqYvc5P5F5S1PL0nx8Nk547CS-n2p56kCtKvwgFzEHWHwtU9QgT0zQEgBOis0g0fCQodXcTu8fvYqZdOrAlgh_LDaZ5qkoWVLv0FEyzODY"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-widest truncate">Personalize or Perish</span><h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight truncate leading-none mt-0.5">Profile &amp; Settings</h1></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors rounded-xl"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-fixed shadow-[0_0_6px_rgba(200,241,105,0.7)]"></span></button><button aria-label="Student Account Profile" class="w-11 h-11 flex items-center justify-center rounded-xl p-0.5"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAStaYjj_NdOgC4-awXMBlg1cXnKS0JeYs8M-Dv5LiEC42-R_AH8-oYIqj4uITieb4AVpW4QFyt8dFMDqAlI0SkK-bBjR7FAx5uUDtqI5e2al9x9FpFQ0SocQgQ_4OpZnfqs2a44Kc6DezDWOi4cJgz80c1HBr0fGhJ96sNaT_n5alj7Iiws_cXluIrZtT9sL17NbkSNdPSeBXcw8ikz3xlpwuekhiqWY3YGwHiF89b5JUinh5UYnvVQA"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface px-margin-mobile"><div class="flex flex-col w-full pb-6 space-y-4">
+<!-- Profile Header Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-md shadow-md">
+<div class="absolute -top-16 -right-16 w-36 h-36 bg-primary-fixed/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-space-md relative z-10">
+<div class="relative shrink-0">
+<div class="w-16 h-16 rounded-full p-0.5 bg-primary-fixed/20 shadow-[0_0_12px_rgba(200,241,105,0.25)] flex items-center justify-center">
+<img class="w-full h-full rounded-full object-cover" data-alt="Editorial close-up portrait of Elena Vass, a focused 22-year-old mathematics scholar with thoughtful expression, subtle ambient chiaroscuro lighting, dark charcoal background with a quiet lime rim highlight on her profile, natural academic portraiture style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvxmtszRh2kFJ6VwcAnrpce6Wqeyh8wni7WMXOKutId7nhbhfwCzu7cpk-5wzWphH_4Ic49UQ-EbToO3TZgDCK3_e5eCb8P-trUbPJdd2dOG2hFdIWOlZZRgSDgrFqk4EoOEwIvsZcix6JfEDlCqSNsX2msjsZDS2-y9S2SqZTGDU_HnZ01WwdLQ49TOzJg8jptEVX3rplHuyTGY2QKCUvkCEA_CUqaGwvQxBKanDm"/>
+</div>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 bg-surface-container rounded-full flex items-center justify-center shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed shadow-[0_0_6px_rgba(200,241,105,0.8)]"></span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight truncate">Elena Vass</h2>
+<span class="material-symbols-outlined text-primary-fixed text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">elena.vass@oxford.ac.uk</p>
+<div class="mt-2 flex flex-wrap items-center gap-1.5">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full">
+            Undergraduate Scholar • MMath CompSci
+          </span>
+</div>
+</div>
+</div>
+<!-- Institutional Enclave Tag -->
+<div class="mt-3.5 pt-3 flex items-center justify-between bg-surface-container-lowest/60 rounded-lg px-3 py-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary-fixed text-[18px] shrink-0">account_balance</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">University of Oxford</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+<span class="font-label-sm text-label-sm text-primary-fixed tracking-wider uppercase">SAML 2.0</span>
+</div>
+</div>
+</div>
+<!-- Learning Statistics Overview (Horizontal Scroll Grid) -->
+<div class="space-y-2">
+<div class="flex items-center justify-between px-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Academic Vector Metrics</span>
+<span class="font-label-sm text-label-sm text-primary-fixed font-medium">Cohort Ranked</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<!-- Total Study Hours -->
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm tracking-wide">STUDY VOLUME</span>
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">timelapse</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">64.5<span class="font-label-md text-label-md text-primary-fixed font-normal ml-0.5">h</span></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-primary-fixed">arrow_upward</span> +4.2h this week
+          </span>
+</div>
+</div>
+<!-- Knowledge Nodes Mastered -->
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm tracking-wide">MASTERY NODES</span>
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">hub</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">148</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span> 92% retention rate
+          </span>
+</div>
+</div>
+<!-- Diagnostic Benchmarks -->
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm tracking-wide">DIAGNOSTICS</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">assignment_turned_in</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">18 <span class="font-label-md text-label-md text-on-surface-variant font-normal">Passed</span></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 block truncate">Discrete Math &amp; ML</span>
+</div>
+</div>
+<!-- Global Cohort Percentile -->
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm tracking-wide">COHORT RANK</span>
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">military_tech</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-primary-fixed font-semibold tracking-tight">88<span class="font-label-md text-label-md text-on-surface font-normal">th</span></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 block truncate">Top 12% in Oxford cohort</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Epistemic AI & Study Preferences Section -->
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">neurology</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Epistemic AI &amp; Study Preferences</h3>
+</div>
+<!-- Segmented Control: Adaptive Remediation Aggressiveness -->
+<div class="space-y-2 pt-1">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Adaptive Remediation</label>
+<span class="font-label-sm text-label-sm text-primary-fixed bg-surface-container px-2 py-0.5 rounded uppercase">Intensive</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Governs the velocity of Socratic interventions during low-confidence retrieval episodes.
+      </p>
+<div class="grid grid-cols-3 gap-1 p-1 bg-surface-container-lowest rounded-lg" id="remediation-segment">
+<button class="segment-btn py-2 px-1 text-center font-label-sm text-label-sm text-on-surface-variant rounded transition-all hover:text-on-surface" data-segment="conservative" type="button">
+          Conservative
+        </button>
+<button class="segment-btn py-2 px-1 text-center font-label-sm text-label-sm text-on-surface-variant rounded transition-all hover:text-on-surface" data-segment="balanced" type="button">
+          Balanced
+        </button>
+<button class="segment-btn py-2 px-1 text-center font-label-sm text-label-sm bg-primary-fixed text-on-primary font-bold rounded shadow-sm transition-all" data-segment="intensive" type="button">
+          Intensive
+        </button>
+</div>
+</div>
+<div class="h-px bg-surface-container-high"></div>
+<!-- Toggle: LaTeX & Mathematical Rendering -->
+<div class="flex items-center justify-between gap-3">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">functions</span>
+<span class="font-label-md text-label-md text-on-surface">LaTeX &amp; Formula Rendering</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Render proof trees and inline tensor equations natively via KaTeX.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="toggle-latex" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-fixed peer-checked:after:bg-on-primary"></div>
+</label>
+</div>
+<!-- Toggle: AI Tutor Vector RAG Citations -->
+<div class="flex items-center justify-between gap-3">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">menu_book</span>
+<span class="font-label-md text-label-md text-on-surface">Vector RAG Citations</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Always link lecture slides &amp; Oxford syllabus chapters in AI dialogues.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="toggle-rag" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-fixed peer-checked:after:bg-on-primary"></div>
+</label>
+</div>
+<!-- Toggle: Diagnostic Difficulty Dynamic Calibration -->
+<div class="flex items-center justify-between gap-3">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+<span class="font-label-md text-label-md text-on-surface">Dynamic Calibration</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Modulate problem difficulty dynamically to target 70% epistemic tension.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="toggle-difficulty" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-fixed peer-checked:after:bg-on-primary"></div>
+</label>
+</div>
+</div>
+<!-- Notification Enclave Section -->
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">mark_email_read</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Notification Enclave</h3>
+</div>
+<!-- Toggle: Intervention & Risk Alerts -->
+<div class="flex items-center justify-between gap-3">
+<div class="flex-1 min-w-0">
+<span class="font-label-md text-label-md text-on-surface block">Intervention &amp; Risk Alerts</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Real-time alerts when epistemic drift or retention decay crosses 30%.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="toggle-alerts" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-fixed peer-checked:after:bg-on-primary"></div>
+</label>
+</div>
+<div class="h-px bg-surface-container-high"></div>
+<!-- Time Picker: Daily Study Plan Dispatch -->
+<div class="flex items-center justify-between gap-3">
+<div class="flex-1 min-w-0">
+<span class="font-label-md text-label-md text-on-surface block">Daily Plan Dispatch</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Automated morning synthesis delivered to student terminal.</p>
+</div>
+<div class="relative shrink-0">
+<div class="flex items-center gap-1.5 bg-surface-container px-3 py-1.5 rounded-lg text-primary-fixed font-label-md text-label-md font-semibold cursor-pointer active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">alarm</span>
+<span>08:00 AM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- System & Account Section -->
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm space-y-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">database</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">System &amp; Protocol</h3>
+</div>
+<!-- Theme Status -->
+<div class="flex items-center justify-between py-1 bg-surface-container-lowest/50 px-3 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">dark_mode</span>
+<span class="font-body-md text-body-md text-on-surface">Interface Mode</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed font-medium flex items-center gap-1">
+        Editorial Obsidian (Dark)
+        <span class="material-symbols-outlined text-[14px]">lock</span>
+</span>
+</div>
+<!-- ChromaDB Sync Status -->
+<div class="flex items-center justify-between py-1 bg-surface-container-lowest/50 px-3 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">sync_alt</span>
+<span class="font-body-md text-body-md text-on-surface">ChromaDB Vector Store</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-fixed shadow-[0_0_8px_rgba(200,241,105,0.7)] animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary-fixed font-medium">Synced (18ms)</span>
+</div>
+</div>
+<!-- Session Sign Out Button -->
+<div class="pt-2">
+<button class="w-full py-2.5 px-4 rounded-xl bg-error-container/20 text-error hover:bg-error-container/30 transition-all font-label-md text-label-md font-semibold flex items-center justify-center gap-2 active:scale-[0.98]" id="signout-button" type="button">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span>Sign Out of Academic Session</span>
+</button>
+</div>
+</div>
+<!-- Editorial Build Metadata Footer -->
+<div class="text-center py-2 space-y-1">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+      Version 4.1.0-prod (Build 9042)
+    </p>
+<p class="font-body-sm text-body-sm text-outline">
+      Personalize or Perish • Epistemic Analytics Consortium
+    </p>
+</div>
+</div>
+<script>
+  (function() {
+    // Remediation Segment Controller
+    const segmentButtons = document.querySelectorAll('#remediation-segment .segment-btn');
+    segmentButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        segmentButtons.forEach(b => {
+          b.classList.remove('bg-primary-fixed', 'text-on-primary', 'font-bold', 'shadow-sm');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary-fixed', 'text-on-primary', 'font-bold', 'shadow-sm');
+        btn.classList.remove('text-on-surface-variant');
+      });
+    });
+
+    // Sign out micro-interaction confirmation
+    const signoutBtn = document.getElementById('signout-button');
+    if (signoutBtn) {
+      signoutBtn.addEventListener('click', () => {
+        const originalText = signoutBtn.innerHTML;
+        signoutBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Terminating Session...</span>';
+        setTimeout(() => {
+          signoutBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Session Cleared</span>';
+          setTimeout(() => {
+            signoutBtn.innerHTML = originalText;
+          }, 1800);
+        }, 900);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.60)]" data-active-classes="text-primary-fixed fill-current font-semibold"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex-1 flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant transition-colors group" data-path="student-dashboard" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[24px] mb-0.5 transition-transform group-hover:scale-105">analytics</span><span class="font-label-sm text-label-sm tracking-normal">Home</span></div></a><a class="flex-1 flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant transition-colors group" data-path="learn" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[24px] mb-0.5 transition-transform group-hover:scale-105">auto_stories</span><span class="font-label-sm text-label-sm tracking-normal">Learn</span></div></a><a class="flex-1 flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant transition-colors group" data-path="tutor" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[24px] mb-0.5 transition-transform group-hover:scale-105">neurology</span><span class="font-label-sm text-label-sm tracking-normal">Tutor</span></div></a><a class="flex-1 flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant transition-colors group" data-path="personalized-study-plan" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[24px] mb-0.5 transition-transform group-hover:scale-105">tune</span><span class="font-label-sm text-label-sm tracking-normal">Plan</span></div></a><a class="flex-1 flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant transition-colors group" data-path="profile-settings" href="#"><div class="relative flex flex-col items-center"><span class="material-symbols-outlined text-[24px] mb-0.5 transition-transform group-hover:scale-105">account_circle</span><span class="font-label-sm text-label-sm tracking-normal">Profile</span></div></a></div></nav></body></html>

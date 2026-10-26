@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="assessment_quiz" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#1f201e", "error-container": "#93000a", "on-secondary-container": "#deb080", "on-primary": "#263500", "inverse-surface": "#e4e2de", "tertiary-container": "#ccedac", "on-secondary-fixed": "#2c1700", "background": "#131412", "error": "#ffb4ab", "surface-container-high": "#292a28", "on-surface": "#e4e2de", "surface": "#131412", "on-surface-variant": "#c4c9b2", "secondary-fixed": "#ffdcbb", "primary": "#ffffff", "surface-container-low": "#1b1c1a", "on-secondary-fixed-variant": "#60401a", "outline": "#8e937e", "on-primary-fixed-variant": "#394d00", "surface-bright": "#393937", "inverse-primary": "#4d6700", "on-error-container": "#ffdad6", "surface-variant": "#343533", "secondary-container": "#63421c", "surface-container-highest": "#343533", "on-primary-container": "#516d00", "primary-fixed": "#c8f169", "primary-container": "#c8f169", "tertiary": "#ffffff", "secondary-fixed-dim": "#edbe8d", "on-tertiary-fixed": "#0c2000", "surface-tint": "#add450", "on-tertiary-fixed-variant": "#344e1d", "on-tertiary": "#1e3708", "primary-fixed-dim": "#add450", "surface-container-lowest": "#0d0e0d", "on-background": "#e4e2de", "on-secondary": "#462a06", "on-tertiary-container": "#506c38", "on-error": "#690005", "surface-dim": "#131412", "on-primary-fixed": "#151f00", "tertiary-fixed-dim": "#b0d092", "secondary": "#edbe8d", "outline-variant": "#444938", "inverse-on-surface": "#30312e", "tertiary-fixed": "#ccedac" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "margin": "2.5rem", "gutter": "1.25rem", "space-sm": "0.5rem" }, "fontFamily": { "label-sm": ["Space Grotesk"], "label-md": ["Space Grotesk"], "body-md": ["DM Sans"], "display-lg-mobile": ["Space Grotesk"], "metric-numeral": ["Space Grotesk"], "body-lg": ["DM Sans"], "body-sm": ["DM Sans"], "headline-md": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "display-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"] }, "fontSize": { "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600"}], "label-md": ["13px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600"}], "metric-numeral": ["44px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "500"}], "headline-sm": ["20px", {"lineHeight": "26px", "fontWeight": "500"}], "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600"}], "headline-lg-mobile": ["26px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500"}] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131412;color:#e4e2de;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 1.25rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.40)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Exit Assessment" class="w-11 h-11 -ml-1 flex items-center justify-center text-on-surface-variant hover:text-error rounded-xl transition-colors"><span class="material-symbols-outlined text-[24px]">close</span></button><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-widest truncate">Assessment in Progress</span><h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight truncate leading-none mt-0.5">Student Quiz / Assessment</h1></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="px-space-sm py-space-xs rounded-xl bg-surface-container-high text-primary-fixed border border-primary-fixed/20 flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">timer</span><span class="font-label-md text-label-md tabular-nums">14:20</span></div></div></div><div class="w-full h-1 bg-surface-container-high"><div class="h-full bg-primary-fixed transition-all duration-300 w-2/5"></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface px-margin-mobile"><div class="flex flex-col w-full pb-6 text-on-surface">
+<!-- Status & Quick Metatools Bar -->
+<div class="flex items-center justify-between gap-space-sm pt-space-xs pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Question</span>
+<span class="px-space-xs py-0.5 rounded-lg bg-surface-container-high font-label-md text-label-md text-primary-fixed">04</span>
+<span class="font-label-sm text-label-sm text-outline">/ 12</span>
+</div>
+<!-- Toggleable Flag for Review Button -->
+<button aria-pressed="false" class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors" id="flag-btn" onclick="toggleFlag()">
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="flag-icon">bookmark</span>
+<span class="font-label-sm text-label-sm" id="flag-label">Flag for review</span>
+</button>
+</div>
+<!-- Primary Question Editorial Panel -->
+<article class="flex flex-col rounded-xl bg-surface-container-low/95 shadow-2xl p-space-md mb-space-md backdrop-blur-md">
+<!-- Academic Topic Tag & Rigor Indicator -->
+<div class="flex items-center justify-between gap-2 pb-space-sm mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Spectral Theorem • Real Symmetric</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary px-2 py-0.5 rounded bg-secondary-container/40">3 Points</span>
+</div>
+<!-- Question Body -->
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed mb-space-md">
+      Consider a real symmetric matrix <span class="font-label-md text-label-md text-primary-fixed bg-surface-container px-1 py-0.5 rounded">A ∈ ℝ<sup>n × n</sup></span>. If <span class="font-label-md text-label-md text-primary-fixed">λ<sub>1</sub></span> and <span class="font-label-md text-label-md text-primary-fixed">λ<sub>2</sub></span> are two distinct eigenvalues of <span class="font-label-md text-label-md text-on-surface">A</span> with corresponding non-zero eigenvectors <span class="font-label-md text-label-md text-primary-fixed">v<sub>1</sub></span> and <span class="font-label-md text-label-md text-primary-fixed">v<sub>2</sub></span>, which of the following statements rigorously characterizes their eigenspaces?
+    </p>
+<!-- Mathematical Notation Block -->
+<div class="flex flex-col gap-1.5 p-space-sm rounded-lg bg-surface-container-lowest/80 font-label-md text-label-md text-on-surface-variant mb-space-xs">
+<div class="flex items-center justify-between text-label-sm uppercase text-outline">
+<span>Formal Hypothesis</span>
+<span class="material-symbols-outlined text-[14px]">functions</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface">
+<span class="tracking-wide">A v<sub>1</sub> = λ<sub>1</sub> v<sub>1</sub></span>
+<span class="text-outline">&amp;</span>
+<span class="tracking-wide">A v<sub>2</sub> = λ<sub>2</sub> v<sub>2</sub></span>
+<span class="text-outline">(λ<sub>1</sub> ≠ λ<sub>2</sub>)</span>
+</div>
+<div class="text-label-sm text-primary-fixed-dim">
+        v<sub>1</sub><sup>T</sup> v<sub>2</sub> ≡ 0 ⇔ ⟨v<sub>1</sub>, v<sub>2</sub>⟩<sub>ℝ<sup>n</sup></sub> = 0
+      </div>
+</div>
+</article>
+<!-- Multiple Choice Options Matrix -->
+<fieldset aria-label="Multiple choice answers" class="flex flex-col gap-space-sm mb-space-lg">
+<legend class="sr-only">Choose one rigorous statement</legend>
+<!-- Option A (Unselected) -->
+<label class="quiz-option relative flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container cursor-pointer transition-all duration-150 active:scale-[0.99] text-on-surface-variant hover:text-on-surface" onclick="selectOption(this)">
+<input class="sr-only" name="spectral_q4" type="radio" value="A"/>
+<span class="opt-indicator flex-shrink-0 w-5 h-5 mt-0.5 rounded-full bg-surface-container-high flex items-center justify-center transition-colors">
+<span class="opt-dot w-2 h-2 rounded-full bg-transparent"></span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline mb-0.5">Option A</span>
+<span class="font-body-md text-body-md text-on-surface">The eigenspaces are mutually orthogonal only if <span class="font-label-md text-label-md">det(A) &gt; 0</span>.</span>
+</div>
+</label>
+<!-- Option B (Selected State - Rigorous Spectral Truth) -->
+<label class="quiz-option is-selected relative flex items-start gap-space-sm p-space-md rounded-xl bg-primary-fixed/10 cursor-pointer transition-all duration-150 active:scale-[0.99] text-on-surface shadow-[inset_0_0_0_1px_rgba(200,241,105,0.85)]" onclick="selectOption(this)">
+<input checked="" class="sr-only" name="spectral_q4" type="radio" value="B"/>
+<span class="opt-indicator flex-shrink-0 w-5 h-5 mt-0.5 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 mb-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Option B</span>
+<span class="px-1.5 py-0.2 rounded-sm bg-primary-fixed/20 font-label-sm text-[10px] text-primary-fixed uppercase tracking-wider">Active Choice</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">
+          The eigenvectors <span class="font-label-md text-label-md text-primary-fixed">v<sub>1</sub></span> and <span class="font-label-md text-label-md text-primary-fixed">v<sub>2</sub></span> are strictly orthogonal (<span class="font-label-md text-label-md text-primary-fixed">v<sub>1</sub> ⋅ v<sub>2</sub> = 0</span>) with respect to the standard Euclidean inner product.
+        </span>
+</div>
+</label>
+<!-- Option C (Unselected) -->
+<label class="quiz-option relative flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container cursor-pointer transition-all duration-150 active:scale-[0.99] text-on-surface-variant hover:text-on-surface" onclick="selectOption(this)">
+<input class="sr-only" name="spectral_q4" type="radio" value="C"/>
+<span class="opt-indicator flex-shrink-0 w-5 h-5 mt-0.5 rounded-full bg-surface-container-high flex items-center justify-center transition-colors">
+<span class="opt-dot w-2 h-2 rounded-full bg-transparent"></span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline mb-0.5">Option C</span>
+<span class="font-body-md text-body-md text-on-surface">The algebraic multiplicity of each eigenvalue strictly exceeds its geometric multiplicity.</span>
+</div>
+</label>
+<!-- Option D (Unselected) -->
+<label class="quiz-option relative flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container cursor-pointer transition-all duration-150 active:scale-[0.99] text-on-surface-variant hover:text-on-surface" onclick="selectOption(this)">
+<input class="sr-only" name="spectral_q4" type="radio" value="D"/>
+<span class="opt-indicator flex-shrink-0 w-5 h-5 mt-0.5 rounded-full bg-surface-container-high flex items-center justify-center transition-colors">
+<span class="opt-dot w-2 h-2 rounded-full bg-transparent"></span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline mb-0.5">Option D</span>
+<span class="font-body-md text-body-md text-on-surface"><span class="font-label-md text-label-md">v<sub>1</sub></span> and <span class="font-label-md text-label-md">v<sub>2</sub></span> span a defective subspace of dimension <span class="font-label-md text-label-md">n - 1</span>.</span>
+</div>
+</label>
+</fieldset>
+<!-- Editorial Visual Proof Anchor -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container-high mb-space-lg">
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center flex-shrink-0">
+<svg class="w-8 h-8 text-primary-fixed" fill="none" viewbox="0 0 32 32">
+<path d="M4 28L28 28" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+<path d="M4 28L4 4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+<path d="M4 28L22 10" stroke="#EDBE8D" stroke-linecap="round" stroke-width="2"></path>
+<path d="M4 28L18 20" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M9 23L13 25" stroke="#C8F169" stroke-linecap="round" stroke-width="1"></path>
+</svg>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Orthogonality Lemma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">(λ<sub>1</sub> - λ<sub>2</sub>)(v<sub>1</sub> ⋅ v<sub>2</sub>) = 0 ⇒ v<sub>1</sub> ⊥ v<sub>2</sub></span>
+</div>
+</div>
+<!-- Question Grid Matrix Drawer Preview (12-Question Roster) -->
+<div class="flex flex-col gap-space-xs p-space-sm rounded-xl bg-surface-container-low mb-space-md">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Benchmark Matrix (12 Items)</span>
+<span class="font-label-sm text-label-sm text-primary-fixed font-semibold">33% Recorded</span>
+</div>
+<div aria-label="Assessment progress matrix" class="grid grid-cols-12 gap-1.5 pt-1">
+<!-- Q1 Completed -->
+<button aria-label="Question 1 completed" class="h-6 rounded-md bg-tertiary-container/30 text-primary-fixed font-label-sm text-[10px] flex items-center justify-center">1</button>
+<!-- Q2 Completed -->
+<button aria-label="Question 2 completed" class="h-6 rounded-md bg-tertiary-container/30 text-primary-fixed font-label-sm text-[10px] flex items-center justify-center">2</button>
+<!-- Q3 Completed -->
+<button aria-label="Question 3 completed" class="h-6 rounded-md bg-tertiary-container/30 text-primary-fixed font-label-sm text-[10px] flex items-center justify-center">3</button>
+<!-- Q4 Active Target -->
+<button aria-label="Question 4 active" class="h-6 rounded-md bg-primary-fixed text-on-primary font-label-sm text-[10px] font-bold flex items-center justify-center ring-2 ring-primary-fixed/40">4</button>
+<!-- Q5 to Q12 Unattempted -->
+<button aria-label="Question 5 unattempted" class="h-6 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] flex items-center justify-center">5</button>
+<button aria-label="Question 6 unattempted" class="h-6 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] flex items-center justify-center">6</button>
+<button aria-label="Question 7 unattempted" class="h-6 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] flex items-center justify-center">7</button>
+<button aria-label="Question 8 unattempted" class="h-6 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] flex items-center justify-center">8</button>
+<button aria-label="Question 9 unattempted" class="h-6 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] flex items-center justify-center">9</button>
+<button aria-label="Question 10 unattempted" class="h-6 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] flex items-center justify-center">10</button>
+<button aria-label="Question 11 unattempted" class="h-6 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] flex items-center justify-center">11</button>
+<button aria-label="Question 12 unattempted" class="h-6 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] flex items-center justify-center">12</button>
+</div>
+</div>
+<!-- Bottom Navigation Actions -->
+<div class="flex items-center gap-space-sm mb-space-sm">
+<!-- Previous Question -->
+<button class="flex-1 py-3 px-space-md rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-bright transition-colors font-label-md text-label-md flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Previous</span>
+</button>
+<!-- Next Question (Primary Acid Lime Accent) -->
+<button class="flex-[2] py-3 px-space-md rounded-xl bg-primary-fixed text-on-primary font-label-md text-label-md font-semibold tracking-wide flex items-center justify-center gap-1.5 shadow-md active:bg-primary-fixed-dim transition-colors" id="next-submit-btn">
+<span>Next Benchmark</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Enclave Autosave Reassurance Banner -->
+<div class="flex items-center justify-center gap-1.5 py-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed">lock</span>
+<span class="font-body-sm text-body-sm text-outline">Answers autosaved to session enclave</span>
+<span class="font-body-sm text-body-sm text-primary-fixed font-mono">• 14:22</span>
+</div>
+</div>
+<script>
+  function toggleFlag() {
+    const btn = document.getElementById('flag-btn');
+    const icon = document.getElementById('flag-icon');
+    const label = document.getElementById('flag-label');
+    const isFlagged = btn.getAttribute('aria-pressed') === 'true';
+
+    if (isFlagged) {
+      btn.setAttribute('aria-pressed', 'false');
+      btn.className = "flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors";
+      icon.style.fontVariationSettings = "'FILL' 0";
+      icon.className = "material-symbols-outlined text-[16px] text-on-surface-variant transition-transform duration-200";
+      label.textContent = "Flag for review";
+    } else {
+      btn.setAttribute('aria-pressed', 'true');
+      btn.className = "flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container transition-colors";
+      icon.style.fontVariationSettings = "'FILL' 1";
+      icon.className = "material-symbols-outlined text-[16px] text-secondary scale-110 transition-transform duration-200";
+      label.textContent = "Flagged (#04)";
+    }
+  }
+
+  function selectOption(selectedCard) {
+    const options = document.querySelectorAll('.quiz-option');
+    options.forEach(opt => {
+      opt.classList.remove('is-selected', 'bg-primary-fixed/10', 'shadow-[inset_0_0_0_1px_rgba(200,241,105,0.85)]');
+      opt.classList.add('bg-surface-container');
+      const radio = opt.querySelector('input[type="radio"]');
+      if (radio) radio.checked = false;
+
+      const indicator = opt.querySelector('.opt-indicator');
+      if (indicator) {
+        indicator.className = "opt-indicator flex-shrink-0 w-5 h-5 mt-0.5 rounded-full bg-surface-container-high flex items-center justify-center transition-colors";
+        indicator.innerHTML = '<span class="opt-dot w-2 h-2 rounded-full bg-transparent"></span>';
+      }
+
+      const activeBadge = opt.querySelector('.bg-primary-fixed\\/20');
+      if (activeBadge) activeBadge.remove();
+    });
+
+    selectedCard.classList.remove('bg-surface-container');
+    selectedCard.classList.add('is-selected', 'bg-primary-fixed/10', 'shadow-[inset_0_0_0_1px_rgba(200,241,105,0.85)]');
+    const input = selectedCard.querySelector('input[type="radio"]');
+    if (input) input.checked = true;
+
+    const ind = selectedCard.querySelector('.opt-indicator');
+    if (ind) {
+      ind.className = "opt-indicator flex-shrink-0 w-5 h-5 mt-0.5 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary";
+      ind.innerHTML = '<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: \'FILL\' 1;">check</span>';
+    }
+  }
+</script></main></body></html>

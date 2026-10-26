@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#1f201e", "error-container": "#93000a", "on-secondary-container": "#deb080", "on-primary": "#263500", "inverse-surface": "#e4e2de", "tertiary-container": "#ccedac", "on-secondary-fixed": "#2c1700", "background": "#131412", "error": "#ffb4ab", "surface-container-high": "#292a28", "on-surface": "#e4e2de", "surface": "#131412", "on-surface-variant": "#c4c9b2", "secondary-fixed": "#ffdcbb", "primary": "#ffffff", "surface-container-low": "#1b1c1a", "on-secondary-fixed-variant": "#60401a", "outline": "#8e937e", "on-primary-fixed-variant": "#394d00", "surface-bright": "#393937", "inverse-primary": "#4d6700", "on-error-container": "#ffdad6", "surface-variant": "#343533", "secondary-container": "#63421c", "surface-container-highest": "#343533", "on-primary-container": "#516d00", "primary-fixed": "#c8f169", "primary-container": "#c8f169", "tertiary": "#ffffff", "secondary-fixed-dim": "#edbe8d", "on-tertiary-fixed": "#0c2000", "surface-tint": "#add450", "on-tertiary-fixed-variant": "#344e1d", "on-tertiary": "#1e3708", "primary-fixed-dim": "#add450", "surface-container-lowest": "#0d0e0d", "on-background": "#e4e2de", "on-secondary": "#462a06", "on-tertiary-container": "#506c38", "on-error": "#690005", "surface-dim": "#131412", "on-primary-fixed": "#151f00", "tertiary-fixed-dim": "#b0d092", "secondary": "#edbe8d", "outline-variant": "#444938", "inverse-on-surface": "#30312e", "tertiary-fixed": "#ccedac" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "margin": "2.5rem", "gutter": "1.25rem", "space-sm": "0.5rem" }, "fontFamily": { "label-sm": ["Space Grotesk"], "label-md": ["Space Grotesk"], "body-md": ["DM Sans"], "display-lg-mobile": ["Space Grotesk"], "metric-numeral": ["Space Grotesk"], "body-lg": ["DM Sans"], "body-sm": ["DM Sans"], "headline-md": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "display-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"] }, "fontSize": { "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600"}], "label-md": ["13px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600"}], "metric-numeral": ["44px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "500"}], "headline-sm": ["20px", {"lineHeight": "26px", "fontWeight": "500"}], "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600"}], "headline-lg-mobile": ["26px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500"}] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131412;color:#e4e2de;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 1.25rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.40)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="w-11 h-11 -ml-1 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-xl transition-colors"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Assessment Review</span><h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight truncate leading-none mt-0.5">Student Results &amp; Review</h1></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Assessment Info" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-xl transition-colors"><span class="material-symbols-outlined text-[22px]">info</span></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface px-margin-mobile"><div class="flex flex-col w-full pb-safe space-y-space-md">
+<!-- Session Meta Pill -->
+<div class="flex items-center justify-between mt-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="truncate">Session #402-A Completed • Evaluated via Gemini 1.5 Pro</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider shrink-0">Linear Alg. II</span>
+</div>
+<!-- Hero Score Panel (Dark Editorial Glass) -->
+<section class="rounded-xl bg-surface-container-low p-space-lg relative overflow-hidden shadow-xl">
+<div class="absolute -right-16 -top-16 w-48 h-48 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Aggregate Mastery Rating</span>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-metric-numeral text-metric-numeral text-on-surface font-bold tracking-tight">82%</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-fixed font-label-sm text-label-sm font-semibold tracking-wide flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">trending_up</span>
+            +6% vs baseline
+          </span>
+</div>
+</div>
+<!-- Segmented Ring Chart Visualization -->
+<div class="relative w-20 h-20 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90 transform" viewbox="0 0 72 72">
+<!-- Background circle track -->
+<circle class="text-surface-container-highest" cx="36" cy="36" fill="none" r="30" stroke="currentColor" stroke-width="5"></circle>
+<!-- Incorrect segment (2/12 = 16.7%) -->
+<circle class="text-[#E98278]" cx="36" cy="36" fill="none" r="30" stroke="currentColor" stroke-dasharray="188.5" stroke-dashoffset="157.1" stroke-width="5.5"></circle>
+<!-- Correct segment (10/12 = 83.3%) -->
+<circle class="text-primary-container" cx="36" cy="36" fill="none" r="30" stroke="currentColor" stroke-dasharray="188.5" stroke-dashoffset="31.4" stroke-linecap="round" stroke-width="5.5"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-none">10</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[9px] uppercase leading-tight">of 12</span>
+</div>
+</div>
+</div>
+<!-- Metric Breakdown Bar -->
+<div class="grid grid-cols-3 gap-space-xs mt-space-md pt-space-md bg-surface-container-high/60 rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px] uppercase">Accuracy</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">10</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 2 err</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px] uppercase">Duration</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-outline text-[14px]">timer</span>
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">18m 40s</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px] uppercase">Speed Rank</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-primary-container text-[14px]">speed</span>
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">74<span class="text-xs text-on-surface-variant font-normal">th</span></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Knowledge Topology Impact -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px]">account_tree</span>
+<h2 class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Knowledge Topology Impact</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">3 Domains Indexed</span>
+</div>
+<!-- Domain List -->
+<div class="space-y-space-xs">
+<!-- Item 1: Orthogonality (STRENGTH) -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col space-y-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2 h-2 rounded-full bg-[#A9C98B] shrink-0"></span>
+<h3 class="font-body-md text-body-md text-on-surface font-medium truncate">Orthogonality &amp; Spectral Theorem</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-[#A9C98B]/10 text-[#A9C98B] font-label-sm text-label-sm uppercase font-semibold shrink-0">
+            Strength • 100%
+          </span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-[#A9C98B] h-1.5 rounded-full" style="width: 100%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">
+          Demonstrated flawless invariant subspace decomposition and symmetric eigenspace stability.
+        </p>
+</div>
+<!-- Item 2: SVD (Moderate) -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col space-y-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2 h-2 rounded-full bg-[#E6BC72] shrink-0"></span>
+<h3 class="font-body-md text-body-md text-on-surface font-medium truncate">Singular Value Decomposition</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-[#E6BC72]/10 text-[#E6BC72] font-label-sm text-label-sm uppercase font-semibold shrink-0">
+            Competent • 75%
+          </span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-[#E6BC72] h-1.5 rounded-full" style="width: 75%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">
+          Sound low-rank approximations; slight latency during pseudo-inverse matrix conditioning calculations.
+        </p>
+</div>
+<!-- Item 3: Non-Convex Gradient Landscapes (CRITICAL LEARNING GAP) -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col space-y-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2 h-2 rounded-full bg-[#E98278] animate-ping shrink-0"></span>
+<h3 class="font-body-md text-body-md text-on-surface font-medium truncate">Non-Convex Gradient Landscapes</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-[#E98278]/15 text-[#E98278] font-label-sm text-label-sm uppercase font-semibold shrink-0">
+            Gap Detected • 40%
+          </span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-[#E98278] h-1.5 rounded-full" style="width: 40%"></div>
+</div>
+<div class="flex items-center gap-space-xs text-[#E98278] font-body-sm text-body-sm text-[12px] pt-0.5">
+<span class="material-symbols-outlined text-[15px] shrink-0">warning</span>
+<span class="truncate">Struggles with saddle point escape conditions &amp; Hessian negativity.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Identified Cognitive Gaps Spotlight -->
+<section class="rounded-xl bg-surface-container p-space-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">psychology</span>
+<h2 class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Identified Cognitive Gap</h2>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container/30 text-secondary font-label-sm text-label-sm text-[10px] uppercase">
+        Prerequisite Block
+      </span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container font-mono">Node #CS-502</span>
+<span class="font-body-sm text-body-sm text-outline">Topology Depth: L3</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-snug">
+        Saddle-point instability in high-dimensional SGD dynamics
+      </p>
+<div class="flex items-start gap-space-xs pt-1 text-on-surface-variant font-body-sm text-body-sm text-[11px]">
+<span class="material-symbols-outlined text-outline text-[14px] shrink-0 mt-0.5">subdirectory_arrow_right</span>
+<span>Blocks advancement to <em>Convex Optimization for Foundation Models (MATH-610)</em>. Remediation required.</span>
+</div>
+</div>
+</section>
+<!-- Contextual Academic Vector Art Placeholder -->
+<div class="rounded-xl overflow-hidden bg-surface-container p-space-md flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg overflow-hidden shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Monochrome 3D abstract geometric wireframe of saddle point curvature on high dimensional manifold, dark charcoal tones with subtle lime green tangent vectors, clean academic rendering" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvDmhfJISRi20bHITSEML9IkzzEDxhTkPZyJD2AgyMgvCjVYTaIo7LMAuM0dLKYLocjO4VuHjsoBU6NSsncNrpJNd07ZnccD1UMArHGrhu7LPtTgdczjSDV_gGIv4OnCpMEfJvBTcWKfU_zy2-wncrthAqbFIeQ0w5KsvC3RAQxgCCQXG-f2vVj64ltegNmEqWcUYOUmsz1aph8gC5c-dcguGLONGC_aHo8dnwBQ_1"/>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold truncate">Adaptive Remediation Ready</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] line-clamp-2 mt-0.5">
+        Targeted synthetic modules calibrated to isolate Hessian eigenvalues and stochastic perturbation trajectories.
+      </p>
+</div>
+</div>
+<!-- Actionable Next Steps Group -->
+<div class="space-y-space-xs pt-space-xs">
+<!-- Primary CTA: Acid Lime Button -->
+<button class="w-full h-12 rounded-xl bg-primary-container hover:bg-[#D5F788] active:scale-[0.99] transition-all flex items-center justify-center gap-space-xs text-on-primary-fixed font-headline-sm text-headline-sm text-[16px] font-semibold">
+<span class="material-symbols-outlined text-[20px]">auto_fix_high</span>
+<span>Generate Adaptive Study Plan</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<!-- Secondary CTA: Review Answers -->
+<button class="w-full h-11 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between px-space-md text-on-surface font-label-md text-label-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">rule</span>
+<span>Review All 12 Answers &amp; Explanations</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">chevron_right</span>
+</button>
+<!-- Tertiary Action: Export Diagnostic -->
+<button class="w-full h-10 rounded-xl bg-transparent hover:bg-surface-container/50 transition-colors flex items-center justify-center gap-space-xs text-outline hover:text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+<span>Export PDF Diagnostic to Facilitator</span>
+</button>
+</div>
+</div></main></body></html>
